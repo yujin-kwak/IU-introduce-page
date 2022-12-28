@@ -1,40 +1,39 @@
 
-.header {
+.body {
     width: 1024px;
-    height: 144px;
+    height: auto;
     margin: 0 auto;
-    background-color: #FFE0C0;
+    background-color: #F7EEDF;
+}
+.header {
+    top: 0;
+    height: 144px;
 }
 
 .header > .line1 {
-    position: absolute;
+    position: relative;
     width: 957px;
 
-    margin: 36px 32px 0 32px;
+    top: 36px;
+    left: 33px;
     border: 2px solid #FF8B14;
 }
 
 .header > .pageTitle {
-    position: absolute;
     width: 262px;
     height: 54px;
 
-    font-family: 'Imbue';
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'Imbue', serif;
     font-size: 40px;
     line-height: 48px;
 
-    margin: 36px 383px 0 377px;
+    margin: 42px 380px 0 380px;
     color: #FF8B14;
 }
 
-
-
 .header > ul {
-    height: 100%;
     padding: 0;
-    margin: 0;
+    margin: 5px 0 0 0;
     
     display: flex;
     justify-content: space-evenly;
@@ -42,23 +41,18 @@
 }
 
 .header > ul > li {
-    font-size: 24px;
-    font-weight: 700;
     list-style: none;
     cursor: pointer;
 }
 
 .header > ul > li > a{
     width: 269px;
-    height: 31px;
 
-    font-family: 'Imbue';
+    font-family: 'Imbue', serif;
     font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    display: flex;
-    align-items: center;
+    display: block;
     text-align: center;
 
     border: 1px solid #FF8B14;
@@ -66,11 +60,16 @@
 
     box-sizing: border-box;
     color: #FF8B14;
+    padding: 1px 0;
 }
 
 .header > .line2 {
     width: 957px;
-
-    margin: 28px 35px 0 0;
+    margin: 10px 32px 0 33px;
     border: 2px solid #FF8B14;
+}
+
+.main {
+    width: 1024px;
+    margin: 0 auto;
 }
