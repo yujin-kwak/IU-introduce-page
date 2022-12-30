@@ -108,10 +108,13 @@ body {
 }
 
 .header > .header_bottom_line {
-    width: 957px;
-    margin: 34px 34px 0 34px;
-	border: 2px solid #FF8B14;
+	width: 957px;
+	height:2px;
+	margin: 34px 34px 0 23px;
+	border:0;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+	background:#FF8B14;
 }
 
 .main {
@@ -150,7 +153,6 @@ body {
 	margin: 13px 0 0 0;
 }
 
-
 .main > .main_profile > .main_profile_content > .main_profile_photo {
 	height: 207px;
 	margin-left: 20px;
@@ -158,7 +160,6 @@ body {
 	border: 1px solid #FF8B14;
 	border-radius: 8px;
 } 
-
 
 .main > .main_profile > .main_profile_content > .main_profile_text {
 	width: 716px;
@@ -174,8 +175,6 @@ body {
 } 
 
 .main > .main_profile > .main_profile_content > .main_profile_text > .info > .info_group {
-	position: relative;
-
 	margin-bottom: 11px;
 
 	font-family: 'Nanum Gothic', sans-serif;
@@ -183,21 +182,14 @@ body {
 	line-height: 20px;
 }
 
-.main > .main_profile > .main_profile_content > .main_profile_text > .info > .info_group > dd{
-	margin-left: 45px;
-}
-
-.info > .info_group > dt {
-	float: left;
+.info > .info_group {
+	display: flex;
 } 
 
-.info > .info_group > dd {
-	position: relative;
+.info > .info_group > dd{
+	margin-left: 5px;
 }
 
-.main > .main_profile > .main_profile_content > .main_profile_text > .info > .info_group:nth-child(4) > dd{
-	margin-left: 63px;
-}
 .main > .main_profile > .main_profile_chart > h3 {
 	margin: 42px 0 0 22px;
 
@@ -239,7 +231,6 @@ body {
 	padding: 0 34px 0 33px;
 }
 
-
 .main > .main_album > .album_list_info{
 	display: flex;
 	flex-wrap: wrap;
@@ -252,19 +243,15 @@ body {
 }
 
 .main > .main_album > .album_list_info > .album_box {
-	position: relative;
+	display: flex;
 }
 
 .main > .main_album > .album_list_info > .album_box > .album_image{
-	position: relative;
-	float: left;
 	width: 157px;
 	height: 156px;
 }
 
 .main > .main_album > .album_list_info > .album_box > .album_content{
-	position: relative;
-	float: right;
 	width: 280px;
 	height: 156px;
 	margin-left: 16px;
@@ -353,26 +340,22 @@ body {
 	padding: 0 34px 0 33px;
 }
 
-.main > .main_career > .main_career_box > .main_career_content {
+.main > .main_career > .main_career_box > .info_list {
 	width: 345px;
 	height: 95px;
-	margin: 32px 0 0 37px;
+	margin: 32px 0 0 40px;
 }
 
-.main .info_list > .info_group{ 
+.main .info_list {
 	font-family: 'Gowun Batang', serif;
 	font-size: 20px;
 	line-height: 29px;
 }
 
-.main .info_list > .info_group > dt { 
+.main .info_list > ul > li > .info_date {
 	color: #FF8B14;
-
+	margin-right: 15px;
 	font-weight: 700;
-}
-
-.main .info_list > .info_group > dd { 
-	margin-left: 89px;
 }
 
 .main > .main_award {
@@ -381,8 +364,12 @@ body {
 	padding: 0 34px 0 33px;
 }
 
-.main > .main_award > .main_award_box > .main_award_content {
-	margin: 23px 0 0 45px;
+.main > .main_award > .main_award_box {
+	margin: 23px 0 0 50px;
+}
+
+.main > .main_award > .main_award_box > .info_list > ul > li > .info_date {
+	margin-right: 29px;
 }
 
 .footer > p {
