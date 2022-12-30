@@ -1,3 +1,3 @@
 # introduce
 
-yujin introduce project
+Self-introduce Project
