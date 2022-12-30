@@ -50,6 +50,7 @@ table {
 body {
 	width: 100%;
 	height: 100%;
+
 	background-color: #F8F4EA;
 }
 
@@ -77,6 +78,7 @@ body {
     height: 54px;
 	padding: 30px 0 0 68px ;
 	margin: 0;
+
 	color: #FF8B14;
 
     font-family: 'Imbue', serif;
@@ -95,11 +97,9 @@ body {
 .header > .nav_box > nav > ul > li {
 	list-style: none;
     cursor: pointer;
-
 }
 
 .header > .nav_box > nav > ul > li > a{
-
 	color: #FF8B14;
 
     font-family: 'Nanum Gothic', sans-serif;
@@ -111,7 +111,6 @@ body {
     width: 957px;
     margin: 34px 34px 0 34px;
 	border: 2px solid #FF8B14;
-
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -121,20 +120,18 @@ body {
 }
 
 .main > .main_profile { 
-    width: 918px;
-	height: 693px;
-	padding: 38px 53px 0 53px;
+    width: 957px;
+	height: 763px;
+	padding: 0 34px 0 33px;
 }
 
-/* .main > .main_profile > .main_sub_title {
-	
-	
-
-} */
-
-.main > .main_profile > .main_sub_title > h2 {
+.main_sub_title > h2 {
+	display: flex;
+	justify-content:center;
+	align-items:center;
 	width: 115px;
 	height: 38px;
+	margin: 40px 0 0 21px;
 	box-sizing: border-box;
 	border: 3px solid transparent;
     border-radius: 20px;   
@@ -142,23 +139,258 @@ body {
 	background-origin: border-box;
     background-clip: content-box, border-box;
 
-	display: flex;
-	justify-content:center;
-	align-items:center;
+	color: #FF8B14;
 
 	font-family: 'Nanum Gothic', sans-serif;
 	font-size: 20px;
-	color: #FF8B14;
 }
 
-.main > .main_profile > .main_profile_photo {
-	margin: 14px 0 0 0;
+.main > .main_profile > .main_profile_content {
+	display: flex;
+	margin: 13px 0 0 0;
+}
 
+
+.main > .main_profile > .main_profile_content > .main_profile_photo {
+	height: 207px;
+	margin-left: 20px;
 	box-sizing: border-box;
-
-	width: 179px;
-	height: 205px;
-
 	border: 1px solid #FF8B14;
 	border-radius: 8px;
 } 
+
+
+.main > .main_profile > .main_profile_content > .main_profile_text {
+	width: 716px;
+	height: 205px;
+	margin-left: 21px;  
+	box-sizing: border-box;
+	border: 1px solid #FF8B14;
+	border-radius: 8px;
+} 
+
+.main > .main_profile > .main_profile_content > .main_profile_text > .info {
+	margin: 30px 0 0 43px;
+} 
+
+.main > .main_profile > .main_profile_content > .main_profile_text > .info > .info_group {
+	position: relative;
+
+	margin-bottom: 11px;
+
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.main > .main_profile > .main_profile_content > .main_profile_text > .info > .info_group > dd{
+	margin-left: 45px;
+}
+
+.info > .info_group > dt {
+	float: left;
+} 
+
+.info > .info_group > dd {
+	position: relative;
+}
+
+.main > .main_profile > .main_profile_content > .main_profile_text > .info > .info_group:nth-child(4) > dd{
+	margin-left: 63px;
+}
+.main > .main_profile > .main_profile_chart > h3 {
+	margin: 42px 0 0 22px;
+
+	color: #FF8B14;
+
+	font-family: 'Gowun Batang', serif;
+	font-size: 20px;
+	line-height: 29px;
+} 
+
+.main > .main_profile > .main_profile_chart > hr {
+	width: 157px;
+	height:1px;
+	margin: 1px 0 0 23px;
+	border:0;
+
+	background:#FF8B14;
+}  
+
+.main > .main_profile > .main_profile_chart > .main_profile_chart_content {	
+	width: 915px;
+	height: 347px;
+	margin: 8px 0 0 21px;
+	border: 1px solid #FF8B14;
+} 
+
+.article_bottom_line {
+	width: 957px;
+	height:2px;
+	margin: 70px 0 0 0 ;
+	border:0;
+
+	background:#FFC68B;
+}
+
+.main > .main_album {
+    width: 957px;
+	height: 979px;
+	padding: 0 34px 0 33px;
+}
+
+
+.main > .main_album > .album_list_info{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;	
+	align-content: space-around;
+	width: 930px;
+	height: 844px;
+	padding: 27px 14px 0 13px;
+}
+
+.main > .main_album > .album_list_info > .album_box {
+	position: relative;
+}
+
+.main > .main_album > .album_list_info > .album_box > .album_image{
+	position: relative;
+	float: left;
+	width: 157px;
+	height: 156px;
+}
+
+.main > .main_album > .album_list_info > .album_box > .album_content{
+	position: relative;
+	float: right;
+	width: 280px;
+	height: 156px;
+	margin-left: 16px;
+	border: 1px solid #FFC68B;
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+
+.main > .main_album > .album_list_info > .album_box > .album_content >.album_explain {
+	margin: 20px 0 0 16px;
+
+	font-family: 'Gowun Batang', serif;
+	font-size: 20px;
+	line-height: 29px;
+}
+
+.main > .main_album > .album_list_info > .album_box > .album_content > .album_explain > strong {
+	color: #FF8B14;
+
+	font-weight: 700;
+}
+
+.main > .main_drama {
+    width: 957px;
+	height: 950px;
+	padding: 0 34px 0 33px;
+}
+
+.main > .main_drama > .main_drama_slider > .drama_poster{
+    width: 210px;
+	height: 296;
+	margin: 47px 0 0 374px;
+	border: 2px solid #FF8B14;
+	border-radius: 5px;
+}
+
+.main > .main_drama > .main_drama_list {
+	width: 750px;
+	height: 420px;
+	margin: 70px 0 0 104px;
+}
+
+.main > .main_drama > .main_drama_list > .drama_explain {
+	height: 68px;
+	border-top: 2px solid #FFC68B;
+
+	font-family: 'Gowun Batang', serif;
+}
+
+.main > .main_drama > .main_drama_list > .drama_explain:nth-child(1) {
+	border-top: 2px solid #FF8B14;
+}
+.main > .main_drama > .main_drama_list > .drama_explain:nth-child(6) {
+	border-bottom: 2px solid #FF8B14;
+}
+
+.main > .main_drama > .main_drama_list > .drama_explain > h3 {
+	margin: 7px 0 0 2px;
+
+	color: #FF8B14;
+
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 29px;
+}
+
+.main > .main_drama > .main_drama_list > .drama_explain > h3 > span {
+	margin-left: 6px;
+
+	color: #FF8B14;
+
+	font-size: 17px;
+	line-height: 26px;
+}
+
+.main > .main_drama > .main_drama_list > .drama_explain > p {
+	margin-left: 3px;
+
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.main > .main_career {
+	width: 957px;
+	height: 226px;
+	padding: 0 34px 0 33px;
+}
+
+.main > .main_career > .main_career_box > .main_career_content {
+	width: 345px;
+	height: 95px;
+	margin: 32px 0 0 37px;
+}
+
+.main .info_list > .info_group{ 
+	font-family: 'Gowun Batang', serif;
+	font-size: 20px;
+	line-height: 29px;
+}
+
+.main .info_list > .info_group > dt { 
+	color: #FF8B14;
+
+	font-weight: 700;
+}
+
+.main .info_list > .info_group > dd { 
+	margin-left: 89px;
+}
+
+.main > .main_award {
+	width: 957px;
+	height: 387px;
+	padding: 0 34px 0 33px;
+}
+
+.main > .main_award > .main_award_box > .main_award_content {
+	margin: 23px 0 0 45px;
+}
+
+.footer > p {
+	margin: 47px 0 56px 327px;
+
+	color: #FF8B14;
+
+	font-family: 'Gowun Batang', serif;
+	font-size: 20px;
+	line-height: 29px;
+}
