@@ -209,11 +209,14 @@ body {
 	background:#FF8B14;
 }  
 
-.main > .main_profile > .main_profile_chart > .main_profile_chart_content {	
-	width: 915px;
-	height: 347px;
-	margin: 8px 0 0 21px;
-	border: 1px solid #FF8B14;
+.main > .main_profile > .main_profile_chart > #main_profile_chartdiv {	
+	/* width: 915px;
+	height: 347px; */
+	width: 100%;
+  	height: 347px;
+	margin: 10px 0 0 21px;
+	/* border: 1px solid #FF8B14; */
+	
 } 
 
 .article_bottom_line {

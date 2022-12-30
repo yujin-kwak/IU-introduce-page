@@ -7,8 +7,11 @@
     <meta name="keyword" content="myself introduce, introduce">
     <meta name="description" content="IU introduce page">
     <link rel="stylesheet" href="./main.css">
-    <script defer src="./app.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <script defer src="./app.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
     <title>IU introduce page</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Imbue:opsz@10..100&family=Nanum+Gothic&display=swap');
@@ -69,7 +72,9 @@
                 <section class="main_profile_chart">
                     <h3>유애나 기수별 인원</h3>
                     <hr>
-                    <div class="main_profile_chart_content"></div>
+                    <div id="main_profile_chartdiv">
+
+                    </div>
                 </section>
                 <hr class="article_bottom_line">
                 </hr>
