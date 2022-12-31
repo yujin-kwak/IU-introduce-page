@@ -1,0 +1,386 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+
+	background-color: #F8F4EA;
+}
+
+.body {
+    width: 1024px;
+    height: auto;
+    margin: 0 auto;
+
+    background-color: #F8F4EA;
+}
+
+.header {
+    top: 0;
+
+    height: 118px;
+}
+
+.header > .nav_box {
+	display: flex;
+	justify-content: space-between
+}
+
+.header > .nav_box > h1 {
+    width: 227px;
+    height: 54px;
+	padding: 30px 0 0 68px ;
+	margin: 0;
+
+	color: #FF8B14;
+
+    font-family: 'Imbue', serif;
+    font-size: 45px;
+    line-height: 54px;
+}
+
+.header > .nav_box > nav > ul {
+    display: flex;
+	margin: 50px 72px 0 0;
+}
+.header > .nav_box > nav > ul > li+li {
+	margin-left: 28px;
+}
+
+.header > .nav_box > nav > ul > li {
+	list-style: none;
+    cursor: pointer;
+}
+
+.header > .nav_box > nav > ul > li > a{
+	color: #FF8B14;
+
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.header > .header_bottom_line {
+	width: 957px;
+	height:2px;
+	margin: 34px 34px 0 23px;
+	border:0;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+	background:#FF8B14;
+}
+
+.main {
+    width: 1024px;
+	height: 100%;
+}
+
+.main > .main_profile { 
+    width: 957px;
+	height: 763px;
+	padding: 0 34px 0 33px;
+}
+
+.main_sub_title > h2 {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	width: 115px;
+	height: 38px;
+	margin: 40px 0 0 21px;
+	box-sizing: border-box;
+	border: 3px solid transparent;
+    border-radius: 20px;   
+	background-image: linear-gradient(#F8F4EA,#F8F4EA), linear-gradient(to right, rgba(255, 139, 20, 1), rgba(232, 178, 124, 1), rgba(240, 195, 149, 1), rgba(240, 195, 149, 1), rgba(224, 173, 120, 1), rgba(255, 139, 20, 1));
+	background-origin: border-box;
+    background-clip: content-box, border-box;
+
+	color: #FF8B14;
+
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 20px;
+}
+
+.main > .main_profile > .main_profile_content {
+	display: flex;
+	margin: 13px 0 0 0;
+}
+
+.main > .main_profile > .main_profile_content > .main_profile_photo {
+	height: 207px;
+	margin-left: 20px;
+	box-sizing: border-box;
+	border: 1px solid #FF8B14;
+	border-radius: 8px;
+} 
+
+.main > .main_profile > .main_profile_content > .main_profile_text {
+	width: 716px;
+	height: 205px;
+	margin-left: 21px;  
+	box-sizing: border-box;
+	border: 1px solid #FF8B14;
+	border-radius: 8px;
+} 
+
+.main > .main_profile > .main_profile_content > .main_profile_text > .info {
+	margin: 30px 0 0 43px;
+} 
+
+.main > .main_profile > .main_profile_content > .main_profile_text > .info > .info_group {
+	margin-bottom: 11px;
+
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.info > .info_group {
+	display: flex;
+} 
+
+.info > .info_group > dd{
+	margin-left: 5px;
+}
+
+.main > .main_profile > .main_profile_chart > h3 {
+	margin: 42px 0 0 22px;
+
+	color: #FF8B14;
+
+	font-family: 'Gowun Batang', serif;
+	font-size: 20px;
+	line-height: 29px;
+} 
+
+.main > .main_profile > .main_profile_chart > hr {
+	width: 157px;
+	height:1px;
+	margin: 1px 0 0 23px;
+	border:0;
+
+	background:#FF8B14;
+}  
+
+.main > .main_profile > .main_profile_chart > #main_profile_chartdiv {	
+	/* width: 915px;
+	height: 347px; */
+	width: 100%;
+  	height: 347px;
+	margin: 10px 0 0 21px;
+	/* border: 1px solid #FF8B14; */
+	
+} 
+
+.article_bottom_line {
+	width: 957px;
+	height:2px;
+	margin: 70px 0 0 0 ;
+	border:0;
+
+	background:#FFC68B;
+}
+
+.main > .main_album {
+    width: 957px;
+	height: 979px;
+	padding: 0 34px 0 33px;
+}
+
+.main > .main_album > .album_list_info{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;	
+	align-content: space-around;
+	width: 930px;
+	height: 844px;
+	padding: 27px 14px 0 13px;
+}
+
+.main > .main_album > .album_list_info > .album_box {
+	display: flex;
+}
+
+.main > .main_album > .album_list_info > .album_box > .album_image{
+	width: 157px;
+	height: 156px;
+}
+
+.main > .main_album > .album_list_info > .album_box > .album_content{
+	width: 280px;
+	height: 156px;
+	margin-left: 16px;
+	border: 1px solid #FFC68B;
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+
+.main > .main_album > .album_list_info > .album_box > .album_content >.album_explain {
+	margin: 20px 0 0 16px;
+
+	font-family: 'Gowun Batang', serif;
+	font-size: 20px;
+	line-height: 29px;
+}
+
+.main > .main_album > .album_list_info > .album_box > .album_content > .album_explain > strong {
+	color: #FF8B14;
+
+	font-weight: 700;
+}
+
+.main > .main_drama {
+    width: 957px;
+	height: 950px;
+	padding: 0 34px 0 33px;
+}
+
+.main > .main_drama > .main_drama_slider > .drama_poster{
+    width: 210px;
+	height: 296;
+	margin: 47px 0 0 374px;
+	border: 2px solid #FF8B14;
+	border-radius: 5px;
+}
+
+.main > .main_drama > .main_drama_list {
+	width: 750px;
+	height: 420px;
+	margin: 70px 0 0 104px;
+}
+
+.main > .main_drama > .main_drama_list > .drama_explain {
+	height: 68px;
+	border-top: 2px solid #FFC68B;
+
+	font-family: 'Gowun Batang', serif;
+}
+
+.main > .main_drama > .main_drama_list > .drama_explain:nth-child(1) {
+	border-top: 2px solid #FF8B14;
+}
+.main > .main_drama > .main_drama_list > .drama_explain:nth-child(6) {
+	border-bottom: 2px solid #FF8B14;
+}
+
+.main > .main_drama > .main_drama_list > .drama_explain > h3 {
+	margin: 7px 0 0 2px;
+
+	color: #FF8B14;
+
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 29px;
+}
+
+.main > .main_drama > .main_drama_list > .drama_explain > h3 > span {
+	margin-left: 6px;
+
+	color: #FF8B14;
+
+	font-size: 17px;
+	line-height: 26px;
+}
+
+.main > .main_drama > .main_drama_list > .drama_explain > p {
+	margin-left: 3px;
+
+	font-size: 15px;
+	line-height: 22px;
+}
+
+.main > .main_career {
+	width: 957px;
+	height: 226px;
+	padding: 0 34px 0 33px;
+}
+
+.main > .main_career > .main_career_box > .info_list {
+	width: 345px;
+	height: 95px;
+	margin: 32px 0 0 40px;
+}
+
+.main .info_list {
+	font-family: 'Gowun Batang', serif;
+	font-size: 20px;
+	line-height: 29px;
+}
+
+.main .info_list > ul > li > .info_date {
+	color: #FF8B14;
+	margin-right: 15px;
+	font-weight: 700;
+}
+
+.main > .main_award {
+	width: 957px;
+	height: 387px;
+	padding: 0 34px 0 33px;
+}
+
+.main > .main_award > .main_award_box {
+	margin: 23px 0 0 50px;
+}
+
+.main > .main_award > .main_award_box > .info_list > ul > li > .info_date {
+	margin-right: 29px;
+}
+
+.footer > p {
+	margin: 47px 0 56px 327px;
+
+	color: #FF8B14;
+
+	font-family: 'Gowun Batang', serif;
+	font-size: 20px;
+	line-height: 29px;
+}
