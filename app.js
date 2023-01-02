@@ -1,3 +1,17 @@
+/************네비게이션 기능************/
+const nav_a = document.querySelectorAll('header a');
+for(let i = 0; i < nav_a.length; i++) {
+  nav_a[i].onclick = function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    window.scrollTo({
+      'behavior': 'smooth',
+      'top': target.offsetTop
+    })
+  }
+}
+
+/************그래픽 차트 기능************/
 am5.ready(function() {
 
 // Create root element

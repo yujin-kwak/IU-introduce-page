@@ -62,6 +62,10 @@ body {
     background-color: #F8F4EA;
 }
 
+a {
+	text-decoration: none;
+}
+
 header {
     top: 0;
 
@@ -123,7 +127,7 @@ main {
 	height: 100%;
 }
 
-main > .main_profile { 
+main > #main_profile { 
     width: 957px;
 	height: 763px;
 	padding: 0 34px 0 33px;
@@ -149,12 +153,12 @@ main > .main_profile {
 	font-size: 20px;
 }
 
-main > .main_profile > .main_profile_content {
+main > #main_profile > .main_profile_content {
 	display: flex;
 	margin: 13px 0 0 0;
 }
 
-main > .main_profile > .main_profile_content > .main_profile_photo {
+main > #main_profile > .main_profile_content > .main_profile_photo {
 	height: 207px;
 	margin-left: 20px;
 	box-sizing: border-box;
@@ -162,7 +166,7 @@ main > .main_profile > .main_profile_content > .main_profile_photo {
 	border-radius: 8px;
 } 
 
-main > .main_profile > .main_profile_content > .main_profile_text {
+main > #main_profile > .main_profile_content > .main_profile_text {
 	width: 716px;
 	height: 205px;
 	margin-left: 21px;  
@@ -171,11 +175,11 @@ main > .main_profile > .main_profile_content > .main_profile_text {
 	border-radius: 8px;
 } 
 
-main > .main_profile > .main_profile_content > .main_profile_text > .info {
+main > #main_profile > .main_profile_content > .main_profile_text > .info {
 	margin: 30px 0 0 43px;
 } 
 
-main > .main_profile > .main_profile_content > .main_profile_text > .info > .info_group {
+main > #main_profile > .main_profile_content > .main_profile_text > .info > .info_group {
 	margin-bottom: 11px;
 
 	font-family: 'Nanum Gothic', sans-serif;
@@ -191,7 +195,7 @@ main > .main_profile > .main_profile_content > .main_profile_text > .info > .inf
 	margin-left: 5px;
 }
 
-main > .main_profile > .main_profile_chart > h3 {
+main > #main_profile > .main_profile_chart > h3 {
 	margin: 42px 0 0 22px;
 
 	color: #FF8B14;
@@ -201,7 +205,7 @@ main > .main_profile > .main_profile_chart > h3 {
 	line-height: 29px;
 } 
 
-main > .main_profile > .main_profile_chart > hr {
+main > #main_profile > .main_profile_chart > hr {
 	width: 157px;
 	height:1px;
 	margin: 1px 0 0 23px;
@@ -210,14 +214,10 @@ main > .main_profile > .main_profile_chart > hr {
 	background:#FF8B14;
 }  
 
-main > .main_profile > .main_profile_chart > #main_profile_chartdiv {	
-	/* width: 915px;
-	height: 347px; */
+main > #main_profile > .main_profile_chart > #main_profile_chartdiv {	
 	width: 100%;
   	height: 347px;
 	margin: 10px 0 0 21px;
-	/* border: 1px solid #FF8B14; */
-	
 } 
 
 .article_bottom_line {
@@ -229,13 +229,13 @@ main > .main_profile > .main_profile_chart > #main_profile_chartdiv {
 	background:#FFC68B;
 }
 
-main > .main_album {
+main > #main_album {
     width: 957px;
 	height: 979px;
 	padding: 0 34px 0 33px;
 }
 
-main > .main_album > .album_list_info{
+main > #main_album > .album_list_info{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -246,16 +246,16 @@ main > .main_album > .album_list_info{
 	padding: 27px 14px 0 13px;
 }
 
-main > .main_album > .album_list_info > .album_box {
+main > #main_album > .album_list_info > .album_box {
 	display: flex;
 }
 
-main > .main_album > .album_list_info > .album_box > .album_image{
+main > #main_album > .album_list_info > .album_box > .album_image{
 	width: 157px;
 	height: 156px;
 }
 
-main > .main_album > .album_list_info > .album_box > .album_content{
+main > #main_album > .album_list_info > .album_box > .album_content{
 	width: 280px;
 	height: 156px;
 	margin-left: 16px;
@@ -264,7 +264,7 @@ main > .main_album > .album_list_info > .album_box > .album_content{
 	border-radius: 8px;
 }
 
-main > .main_album > .album_list_info > .album_box > .album_content >.album_explain {
+main > #main_album > .album_list_info > .album_box > .album_content >.album_explain {
 	margin: 20px 0 0 16px;
 
 	font-family: 'Gowun Batang', serif;
@@ -272,19 +272,19 @@ main > .main_album > .album_list_info > .album_box > .album_content >.album_expl
 	line-height: 29px;
 }
 
-main > .main_album > .album_list_info > .album_box > .album_content > .album_explain > strong {
+main > #main_album > .album_list_info > .album_box > .album_content > .album_explain > strong {
 	color: #FF8B14;
 
 	font-weight: 700;
 }
 
-main > .main_drama {
+main > #main_drama {
     width: 957px;
 	height: 950px;
 	padding: 0 34px 0 33px;
 }
 
-main > .main_drama > .main_drama_slider > .drama_poster{
+main > #main_drama > .main_drama_slider > .drama_poster{
     width: 210px;
 	height: 296;
 	margin: 47px 0 0 374px;
@@ -292,28 +292,28 @@ main > .main_drama > .main_drama_slider > .drama_poster{
 	border-radius: 5px;
 }
 
-main > .main_drama > .main_drama_list {
+main > #main_drama > .main_drama_list {
 	width: 750px;
 	height: 420px;
 	margin: 70px 0 0 104px;
 }
 
-main > .main_drama > .main_drama_list > .drama_explain {
+main > #main_drama > .main_drama_list > .drama_explain {
 	height: 68px;
 	border-top: 2px solid #FFC68B;
 
 	font-family: 'Gowun Batang', serif;
 }
 
-main > .main_drama > .main_drama_list > .drama_explain:nth-child(1) {
+main > #main_drama > .main_drama_list > .drama_explain:nth-child(1) {
 	border-top: 2px solid #FF8B14;
 }
 
-main > .main_drama > .main_drama_list > .drama_explain:nth-child(6) {
+main > #main_drama > .main_drama_list > .drama_explain:nth-child(6) {
 	border-bottom: 2px solid #FF8B14;
 }
 
-main > .main_drama > .main_drama_list > .drama_explain > h3 {
+main > #main_drama > .main_drama_list > .drama_explain > h3 {
 	margin: 7px 0 0 2px;
 
 	color: #FF8B14;
@@ -323,7 +323,7 @@ main > .main_drama > .main_drama_list > .drama_explain > h3 {
 	line-height: 29px;
 }
 
-main > .main_drama > .main_drama_list > .drama_explain > h3 > span {
+main > #main_drama > .main_drama_list > .drama_explain > h3 > span {
 	margin-left: 6px;
 
 	color: #FF8B14;
@@ -332,20 +332,20 @@ main > .main_drama > .main_drama_list > .drama_explain > h3 > span {
 	line-height: 26px;
 }
 
-main > .main_drama > .main_drama_list > .drama_explain > p {
+main > #main_drama > .main_drama_list > .drama_explain > p {
 	margin-left: 3px;
 
 	font-size: 15px;
 	line-height: 22px;
 }
 
-main > .main_career {
+main > #main_career {
 	width: 957px;
 	height: 226px;
 	padding: 0 34px 0 33px;
 }
 
-main > .main_career > .main_career_box > .info_list {
+main > #main_career > .main_career_box > .info_list {
 	width: 345px;
 	height: 95px;
 	margin: 32px 0 0 40px;
@@ -363,17 +363,17 @@ main .info_list > ul > li > .info_date {
 	font-weight: 700;
 }
 
-main > .main_award {
+main > #main_award {
 	width: 957px;
 	height: 387px;
 	padding: 0 34px 0 33px;
 }
 
-main > .main_award > .main_award_box {
+main > #main_award > .main_award_box {
 	margin: 23px 0 0 50px;
 }
 
-main > .main_award > .main_award_box > .info_list > ul > li > .info_date {
+main > #main_award > .main_award_box > .info_list > ul > li > .info_date {
 	margin-right: 29px;
 }
 
