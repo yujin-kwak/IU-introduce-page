@@ -294,10 +294,68 @@ main > .main_drama {
 	padding: 0 34px 0 33px;
 }
 
-main > .main_drama > .main_drama_slider > .drama_poster{
-    width: 210px;
-	height: 296;
+main > .main_drama > .left_arrow{
+    background: url(assets/images/left_arrow.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 21px;
+	height: 34px;
+	margin: 155px 0 0 296px;
+	cursor: pointer;
+}
+
+main > .main_drama > .right_arrow{
+    background: url(assets/images/right_arrow.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 21px;
+	height: 34px;
+	margin: 155px 0 0 600px;
+	cursor: pointer;
+}
+
+main > .main_drama > .main_drama_slider {
+    position: relative;
+	width: 168px;
+	height: 242px;
 	margin: 47px 0 0 374px;
+}
+
+main > .main_drama > .main_drama_slider > .drama_poster {
+    width: 100%;
+	height: 100%;
+	display: none;
+}
+
+main > .main_drama > .main_drama_slider > .drama_poster:nth-child(1) {
+    background: url(assets/images/drama_드림하이_image.jpg);
+}
+
+main > .main_drama > .main_drama_slider > .drama_poster:nth-child(2) {
+    background: url(assets/images/drama_최고다이순신_image.jpg);
+}
+
+main > .main_drama > .main_drama_slider > .drama_poster:nth-child(3) {
+    background: url(assets/images/drama_프로듀사_image.jpg);
+}
+
+main > .main_drama > .main_drama_slider > .drama_poster:nth-child(4) {
+    background: url(assets/images/drama_달의연인_보보경심려_image.jpg);
+}
+
+main > .main_drama > .main_drama_slider > .drama_poster:nth-child(5) {
+    background: url(assets/images/drama_나의아저씨_image.jpg);
+}
+
+main > .main_drama > .main_drama_slider > .drama_poster:nth-child(6) {
+    background: url(assets/images/drama_호텔델루나_image.jpg);
+}
+
+main > .main_drama > .main_drama_slider > .drama_poster.active {
+	display: block;
+}
+
+main > .main_drama > .main_drama_slider > .drama_poster{
 	border: 2px solid #FF8B14;
 	border-radius: 5px;
 }
