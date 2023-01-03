@@ -16,7 +16,7 @@ const main_profile_data_dt = document.querySelectorAll('.profile_data_dt');
 const main_profile_data_dd = document.querySelectorAll('.profile_data_dd');
 
 (async () => {
-    const res = await fetch("profile.json");
+    const res = await fetch("profile_text.json");
     const profile_data = await res.json()
 
     for(let i=0;i<5;i++){
