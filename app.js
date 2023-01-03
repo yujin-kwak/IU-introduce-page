@@ -299,3 +299,17 @@ document.querySelector('.left_arrow').onclick = function () {
 
   previous_slide.classList.add('active');
 }
+
+/************ 프로필 js *********/
+
+// const main_profile_data_dt = document.querySelectorAll('#profile_data_dt');
+// const main_profile_data_dd = document.querySelectorAll('#profile_data_dd');
+
+// const profile_data_dt = ["이름", "출생", "나이", "소속사", "데뷔"]
+// const profile_data_dd = [": 이지은, IU", ": 1993.05.16", ": 30세, 만29세",": EDAM 엔터테인먼트",": 2008년 미니 앨범 [Lost and Found]"]
+
+// for(let i=0;i<5;i++){
+//   main_profile_data_dt[i].innerHTML = profile_data_dt[i];
+//   main_profile_data_dd[i].innerHTML = profile_data_dd[i];
+// }
+
