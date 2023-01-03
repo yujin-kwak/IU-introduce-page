@@ -8,7 +8,6 @@
     <meta name="description" content="IU introduce page">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-    <script defer src="./profile_text.js"></script>
     <script defer src="./app.js"></script>
     <title>IU introduce page</title>
     <style>
@@ -43,29 +42,7 @@
                         <img src="./assets/images/IU_profile_image.png" alt="아이유 프로필 사진">
                     </section>
                     <section class="main_profile_text">
-                        <dl class="info">
-                            <!-- <script src="./profile.js"></script> -->
-                            <div class="info_group">
-                                <dt class="profile_data_dt"></dt>
-                                <dd class="profile_data_dd"></dd>
-                            </div>
-                            <div class="info_group">
-                                <dt class="profile_data_dt"></dt>
-                                <dd class="profile_data_dd"></dd>
-                            </div>
-                            <div class="info_group">
-                                <dt class="profile_data_dt"></dt>
-                                <dd class="profile_data_dd"></dd>
-                            </div>
-                            <div class="info_group">
-                                <dt class="profile_data_dt"></dt>
-                                <dd class="profile_data_dd"></dd>
-                            </div>
-                            <div class="info_group">
-                                <dt class="profile_data_dt"></dt>
-                                <dd class="profile_data_dd"></dd>
-                            </div>
-                        </dl>
+                        <dl id="profile_data" , class="info"></dl>
                     </section>
                 </section>
                 <section class="main_profile_chart">
@@ -73,15 +50,15 @@
                     <hr>
                     <div><canvas id="UAENA_Chart" width="915px" , height="347px"></canvas></div>
                 </section>
-                <hr class="article_bottom_line" , id="profile_bottom_line">
+                <hr id="profile_bottom_line" , class="article_bottom_line">
                 </hr>
             </article>
             <article class="main_album">
                 <section class="main_sub_title">
                     <h2>앨범</h2>
                 </section>
-                <section class="album_list_info">
-                    <section class="album_box">
+                <section id="album_list_info" class="album_list_info">
+                    <!-- <section class="album_box">
                         <section class="album_image">
                             <img src="./assets/images/album_잔소리.png" alt="잔소리 앨범 표지">
                         </section>
@@ -321,9 +298,9 @@
                                 </dl>
                             </div>
                         </section>
-                    </section>
+                    </section> -->
                 </section>
-                <hr class="article_bottom_line" , id="album_bottom_line">
+                <hr id="album_bottom_line" , class="article_bottom_line">
             </article>
             <article class="main_drama">
                 <section class="main_sub_title">
@@ -339,73 +316,34 @@
                     <div class="drama_poster"></div>
                     <div class="drama_poster"></div>
                 </section>
-                <section class="main_drama_list">
-                    <div class="drama_explain">
-                        <h3>[ 드림하이 ]<span class="role">주연 김필숙 역</span></h3>
-                        <p>연예예술고등학교를 배경으로 펼쳐지는 청춘들의 스타가 되기 위한 꿈과 사랑을 그린 드라마</p>
-                    </div>
-                    <div class="drama_explain">
-                        <h3>[ 최고다 이순신 ]<span class="role">주연 이순신 역</span></h3>
-                        <p>아버지의 죽음을 계기로 뜻하지 않은 운명의 소용돌이에 휩쓸리게 된 엄마와 막내딸의 행복 찾기와 그녀의 사랑이야기</p>
-                    </div>
-                    <div class="drama_explain">
-                        <h3>[ 프로듀사 ]<span class="role">주연 신디 역</span></h3>
-                        <p>예능국 안에서 펼쳐지는 이야기</p>
-                    </div>
-                    <div class="drama_explain">
-                        <h3>[ 달의 연인 - 보보경심 려 ]<span class="role">주연 해수 역</span></h3>
-                        <p>4황자 '왕소'와 21세기 여인 '고하진'의 영혼이 미끄러져 들어간 고려 소녀 '해수'가 천 년의 시공간을 초월해 만난다.</p>
-                    </div>
-                    <div class="drama_explain">
-                        <h3>[ 나의 아저씨 ]<span class="role">주연 이지안 역</span></h3>
-                        <p>삶의 무게를 버티며 살아가는 아저씨 삼 형제와 거칠게 살아온 한 여성이 서로를 통해 삶을 치유하게 되는 이야기</p>
-                    </div>
-                    <div class="drama_explain">
-                        <h3>[ 호텔 델루나 ]<span class="role">주연 장만월 역</span></h3>
-                        <p>엘리트 호텔리어가 호텔 델루나의 지배인을 맡게 되면서 사장과 함께 델루나를 운영하며 생기는 특별한 이야기</p>
-                    </div>
+                <section id="drama_data" , class="main_drama_list">
                 </section>
-                <hr class="article_bottom_line" , id="drama_bottom_line">
+                <hr id="drama_bottom_line" , class="article_bottom_line">
             </article>
             <article class="main_career">
                 <section class="main_sub_title">
                     <h2>경력사항</h2>
                 </section>
                 <section class="main_career_box">
-                    <div class="info_list">
-                        <ul>
-                            <li><span class="info_date">2013.02</span>경찰청 명예순경</li>
-                            <li><span class="info_date">2012.02</span>경찰청 학교폭력 예방 홍보대사</li>
-                            <li><span class="info_date">2011.05</span>2012 여수세계박람회 홍보대사</li>
-                        </ul>
+                    <div id="career_data" , class="info_list">
+                        <ul></ul>
                     </div>
                 </section>
-                <hr class="article_bottom_line" , id="career_bottom_line">
+                <hr id="career_bottom_line" , class="article_bottom_line">
             </article>
             <article class="main_award">
                 <section class="main_sub_title">
                     <h2>수상내역</h2>
                 </section>
                 <section class="main_award_box">
-                    <div class="info_list">
-                        <ul>
-                            <li><span class="info_date">2022</span>제 14회 멜론뮤직어워드 베스트 솔로 여자</li>
-                            <li><span class="info_date">2022</span>제 14회 멜론뮤직어워드 스테이지 오브 더 이어</li>
-                            <li><span class="info_date">2022</span>제 14회 멜론뮤직어워드 TOP 10</li>
-                            <li><span class="info_date">2022</span>제 43회 청룡영화상 청정원 인기스타상</li>
-                            <li><span class="info_date">2022</span>제 42회 한국영화평론가협회상 신인여우상 (브로커)</li>
-                            <li><span class="info_date">2022</span>제 31회 부일영화상 여자인기스타상 (브로커)</li>
-                            <li><span class="info_date">2022</span>제 27회 춘사국제영화제 신인여우상 (브로커)</li>
-                            <li><span class="info_date">2022</span>K 글로벌 하트 드림 어워즈 글로벌 최애돌 여자 솔로 인기상</li>
-                            <li><span class="info_date">2022</span>제 19회 한국대중음악상 최우수 팝 음반 부문</li>
-                            <li><span class="info_date">2022</span>제 11회 가온차트 뮤직 어워즈 올해의 음반제작상</li>
-                        </ul>
+                    <div id="award_data" , class="info_list">
+                        <ul></ul>
                     </div>
                 </section>
             </article>
         </main>
         <footer>
-            <p>Copyright 2022. Yujin. All rights reserved.</p>
+            <p>Copyright 2023. Yujin. All rights reserved.</p>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
