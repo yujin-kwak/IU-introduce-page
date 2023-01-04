@@ -23,7 +23,7 @@
   ],
   "album_content": [
     {
-      "img": "./assets/images/album_잔소리.png",
+      "img": "./images/album_잔소리.png",
       "strong": "잔소리",
       "alt": "잔소리 앨범 표지",
       "dt_one": "title",
@@ -34,7 +34,7 @@
       "dd_three": ": 2010.06.03"
     },
     {
-      "img": "./assets/images/album_Real.png",
+      "img": "./images/album_Real.png",
       "strong": "Real",
       "alt": "Real 앨범 표지",
       "dt_one": "title",
@@ -45,7 +45,7 @@
       "dd_three": ": 2010.12.09"
     },
     {
-      "img": "./assets/images/album_Last_Fantasy.png",
+      "img": "./images/album_Last_Fantasy.png",
       "strong": "Last Fantasy",
       "alt": "Last Fantasy 앨범 표지",
       "dt_one": "title",
@@ -56,7 +56,7 @@
       "dd_three": ": 2011.11.29"
     },
     {
-      "img": "./assets/images/album_Modern_Times.png",
+      "img": "./images/album_Modern_Times.png",
       "strong": "Modern Times",
       "alt": "Modern Times 앨범 표지",
       "dt_one": "title",
@@ -67,7 +67,7 @@
       "dd_three": ": 2013.10.08"
     },
     {
-      "img": "./assets/images/album_Modern_Times_Epilogue.png",
+      "img": "./images/album_Modern_Times_Epilogue.png",
       "strong": "3집 Modern Times-Epilogue",
       "alt": "3집 Modern Times-Epilogue 앨범 표지",
       "dt_one": "title",
@@ -78,7 +78,7 @@
       "dd_three": ": 2013.12.20"
     },
     {
-      "img": "./assets/images/album_밤편지.png",
+      "img": "./images/album_밤편지.png",
       "strong": "밤편지",
       "alt": "밤편지 앨범 표지",
       "dt_one": "title",
@@ -89,7 +89,7 @@
       "dd_three": ": 2017.03.24"
     },
     {
-      "img": "./assets/images/album_palette.png",
+      "img": "./images/album_palette.png",
       "strong": "Palette",
       "alt": "Palette 앨범 표지",
       "dt_one": "title",
@@ -100,7 +100,7 @@
       "dd_three": ": 2017.04.21"
     },
     {
-      "img": "./assets/images/album_Love_poem.png",
+      "img": "./images/album_Love_poem.png",
       "strong": "Love poem",
       "alt": "Love poem 앨범 표지",
       "dt_one": "title",
@@ -111,7 +111,7 @@
       "dd_three": ": 2019.11.18"
     },
     {
-      "img": "./assets/images/album_Lilac.png",
+      "img": "./images/album_Lilac.png",
       "strong": "IU 5th Album 'LILAC'",
       "alt": "IU 5th Album 'LILAC' 앨범 표지",
       "dt_one": "title",
@@ -122,7 +122,7 @@
       "dd_three": ": 2021.03.25"
     },
     {
-      "img": "./assets/images/album_strawberry_moon.png",
+      "img": "./images/album_strawberry_moon.png",
       "strong": "strawberry moon",
       "alt": "strawberry moon 앨범 표지",
       "dt_one": "title",
