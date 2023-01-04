@@ -1,229 +1,220 @@
-am5.ready(function() {
-
-// Create root element
-// https://www.amcharts.com/docs/v5/getting-started/#Root_element
-const root = am5.Root.new("main_profile_chartdiv");
-
-// Set themes
-// https://www.amcharts.com/docs/v5/concepts/themes/
-root.setThemes([
-  am5themes_Animated.new(root)
-]);
-
-var data = [{
-  name: "1기",
-  steps: 10557,
-  pictureSettings: {
-    src: "./assets/images/1기_photocard.PNG"
-  }
-}, {
-  name: "2기",
-  steps: 18600,
-  pictureSettings: {
-    src: "./assets/images/2기_photocard.PNG"
-  }
-}, {
-  name: "3기",
-  steps: 30500,
-  pictureSettings: {
-    src: "./assets/images/3기_photocard.PNG"
-  }
-}, {
-  name: "4기",
-  steps: 50301,
-  pictureSettings: {
-    src: "./assets/images/4기_photocard.PNG"
-  }
-}, {
-  name: "5기",
-  steps: 45200,
-  pictureSettings: {
-    src: "./assets/images/5기_photocard.PNG"
-  }
-}];
-
-// Create chart
-// https://www.amcharts.com/docs/v5/charts/xy-chart/
-var chart = root.container.children.push(
-  am5xy.XYChart.new(root, {
-    panX: false,
-    panY: false,
-    wheelX: "none",
-    wheelY: "none",
-    paddingBottom: 50,
-    paddingTop: 40
-  })
-);
-
-// Create axes
-// https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
-
-var xRenderer = am5xy.AxisRendererX.new(root, {});
-xRenderer.grid.template.set("visible", false);
-
-var xAxis = chart.xAxes.push(
-  am5xy.CategoryAxis.new(root, {
-    paddingTop:40,
-    categoryField: "name",
-    renderer: xRenderer
-  })
-);
-
-
-var yRenderer = am5xy.AxisRendererY.new(root, {});
-yRenderer.grid.template.set("strokeDasharray", [3]);
-
-var yAxis = chart.yAxes.push(
-  am5xy.ValueAxis.new(root, {
-    min: 0,
-    renderer: yRenderer
-  })
-);
-
-// Add series
-// https://www.amcharts.com/docs/v5/charts/xy-chart/series/
-var series = chart.series.push(
-  am5xy.ColumnSeries.new(root, {
-    name: "Income",
-    xAxis: xAxis,
-    yAxis: yAxis,
-    valueYField: "steps",
-    categoryXField: "name",
-    sequencedInterpolation: true,
-    calculateAggregates: true,
-    maskBullets: false,
-    tooltip: am5.Tooltip.new(root, {
-      dy: -30,
-      pointerOrientation: "vertical",
-      labelText: "{valueY}"
-    })
-  })
-);
-
-series.columns.template.setAll({
-  strokeOpacity: 0,
-  cornerRadiusBR: 10,
-  cornerRadiusTR: 10,
-  cornerRadiusBL: 10,
-  cornerRadiusTL: 10,
-  maxWidth: 50,
-  fillOpacity: 0.8
-});
-
-var currentlyHovered;
-
-series.columns.template.events.on("pointerover", function (e) {
-  handleHover(e.target.dataItem);
-});
-
-series.columns.template.events.on("pointerout", function (e) {
-  handleOut();
-});
-
-function handleHover(dataItem) {
-  if (dataItem && currentlyHovered != dataItem) {
-    handleOut();
-    currentlyHovered = dataItem;
-    var bullet = dataItem.bullets[0];
-    bullet.animate({
-      key: "locationY",
-      to: 1,
-      duration: 600,
-      easing: am5.ease.out(am5.ease.cubic)
+/************네비게이션 기능************/
+const nav_a = document.querySelectorAll('header a');
+for (let i = 0; i < nav_a.length; i++) {
+  nav_a[i].onclick = function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    window.scrollTo({
+      behavior: 'smooth',
+      top: target.offsetTop,
     });
-  }
+  };
 }
 
-function handleOut() {
-  if (currentlyHovered) {
-    var bullet = currentlyHovered.bullets[0];
-    bullet.animate({
-      key: "locationY",
-      to: 0,
-      duration: 600,
-      easing: am5.ease.out(am5.ease.cubic)
-    });
-  }
-}
+/************그래픽 차트 기능************/
+const ctx = document.getElementById('UAENA_Chart');
 
-var circleTemplate = am5.Template.new({});
+const data = {
+  labels: ['1기', '2기', '3기', '4기', '5기'],
+  datasets: [
+    {
+      barPercentage: 0.6,
+      base: 0,
+      label: '기수별 인원',
+      data: [10557, 18600, 30500, 50301, 45200],
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.2)',
+        'rgba(255, 159, 64, 0.2)',
+        'rgba(255, 205, 86, 0.2)',
+        'rgba(75, 192, 192, 0.2)',
+        'rgba(54, 162, 235, 0.2)',
+      ],
+      hoverBackgroundColor: [
+        'rgba(255, 99, 132, 0.5)',
+        'rgba(255, 159, 64, 0.5)',
+        'rgba(255, 205, 86, 0.5)',
+        'rgba(75, 192, 192, 0.5)',
+        'rgba(54, 162, 235, 0.5)',
+      ],
+      borderColor: [
+        'rgb(255, 99, 132)',
+        'rgb(255, 159, 64)',
+        'rgb(255, 205, 86)',
+        'rgb(75, 192, 192)',
+        'rgb(54, 162, 235)',
+      ],
+      borderRadius: 8,
+      borderWidth: 2,
+    },
+  ],
+};
 
-series.bullets.push(function (root, series, dataItem) {
-  var bulletContainer = am5.Container.new(root, {});
-  var circle = bulletContainer.children.push(
-    am5.Circle.new(
-      root,
-      {
-        radius: 34
+const config = {
+  type: 'bar',
+  data: data,
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
       },
-      circleTemplate
-    )
-  );
-
-  var maskCircle = bulletContainer.children.push(
-    am5.Circle.new(root, { radius: 27 })
-  );
-
-  // only containers can be masked, so we add image to another container
-  var imageContainer = bulletContainer.children.push(
-    am5.Container.new(root, {
-      mask: maskCircle
-    })
-  );
-
-  var image = imageContainer.children.push(
-    am5.Picture.new(root, {
-      templateField: "pictureSettings",
-      centerX: am5.p50,
-      centerY: am5.p50,
-      width: 60,
-      height: 60
-    })
-  );
-
-  return am5.Bullet.new(root, {
-    locationY: 0,
-    sprite: bulletContainer
-  });
-});
-
-// heatrule
-series.set("heatRules", [
-  {
-    dataField: "valueY",
-    min: am5.color(0xe5dc36),
-    max: am5.color(0x5faa46),
-    target: series.columns.template,
-    key: "fill"
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
+    responsive: false,
   },
-  {
-    dataField: "valueY",
-    min: am5.color(0xe5dc36),
-    max: am5.color(0x5faa46),
-    target: circleTemplate,
-    key: "fill"
+};
+
+new Chart(ctx, config);
+
+/************클릭 이미지 슬라이더 기능************/
+document.querySelector('.right_arrow').onclick = function () {
+  let current_slide = document.querySelector(
+    '.main_drama .drama_poster.active'
+  );
+  let next_slide = current_slide.nextElementSibling;
+  if (next_slide === null) {
+    next_slide = current_slide.parentElement.firstElementChild;
   }
-]);
+  current_slide.animate(
+    {
+      opacity: [1, 0],
+    },
+    {
+      duration: 1500,
+      easing: 'ease',
+      iterations: 1,
+      fill: 'both',
+    }
+  );
 
-series.data.setAll(data);
-xAxis.data.setAll(data);
+  current_slide.classList.remove('active');
+  next_slide.animate(
+    {
+      opacity: [0, 1],
+    },
+    {
+      duration: 1500,
+      easing: 'ease',
+      iterations: 1,
+      fill: 'both',
+    }
+  );
 
-var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
-cursor.lineX.set("visible", false);
-cursor.lineY.set("visible", false);
+  next_slide.classList.add('active');
+};
 
-cursor.events.on("cursormoved", function () {
-  var dataItem = series.get("tooltip").dataItem;
-  if (dataItem) {
-    handleHover(dataItem);
-  } else {
-    handleOut();
+document.querySelector('.left_arrow').onclick = function () {
+  let current_slide = document.querySelector(
+    '.main_drama .drama_poster.active'
+  );
+  let previous_slide = current_slide.previousElementSibling;
+  if (previous_slide === null) {
+    previous_slide = current_slide.parentElement.lastElementChild;
   }
+  current_slide.animate(
+    {
+      opacity: [1, 0],
+    },
+    {
+      duration: 1500,
+      easing: 'ease',
+      iterations: 1,
+      fill: 'both',
+    }
+  );
+
+  current_slide.classList.remove('active');
+  previous_slide.animate(
+    {
+      opacity: [0, 1],
+    },
+    {
+      duration: 1500,
+      easing: 'ease',
+      iterations: 1,
+      fill: 'both',
+    }
+  );
+
+  previous_slide.classList.add('active');
+};
+
+/************ 반복 UI 처리 ************/
+const profile_data = document.querySelector('#profile_data');
+const album_data = document.querySelector('#album_list_info');
+const drama_data = document.querySelector('#drama_data');
+const career_data = document.querySelector('#career_data > ul');
+const award_data = document.querySelector('#award_data > ul');
+
+(async () => {
+  const res = await fetch('profile_text.json');
+  const content = await res.json();
+
+  const profile_data_list = content.profile_text
+    .map(
+      ({ dt, dd }) =>
+        `<div class="info_group"><dt>${dt}</dt><dd>${dd}</dd></div>`
+    )
+    .join('');
+  profile_data.innerHTML = profile_data_list;
+
+  //const album_data_list_dl = content.album_content_dl.map(([{dt, dd}]) => `<div class='info_group'><dt>${dt}</dt><dd>${dd}</dd></div>`).join('');
+  const album_data_list = content.album_content
+    .map(
+      ({
+        img,
+        strong,
+        alt,
+        dt_one,
+        dd_one,
+        dt_two,
+        dd_two,
+        dt_three,
+        dd_three,
+      }) =>
+        `<section class="album_box"><section class="album_image_box"><div class="album_image"><img src="${img}" alt="${alt}"></div><div class="album_image_hover"></div></section><section class="album_content"><div class="album_explain"><strong>${strong}</strong><dl class="info"><div class="info_group"><dt>${dt_one}</dt><dd>${dd_one}</dd></div><div class="info_group"><dt>${dt_two}</dt><dd>${dd_two}</dd></div><div class="info_group"><dt>${dt_three}</dt><dd>${dd_three}</dd></div></dl></div></section></section>`
+    )
+    .join('');
+  album_data.innerHTML = album_data_list;
+
+  const drama_data_list = content.drama_text
+    .map(
+      ({ h3, span, p }) =>
+        `<div class="drama_explain"><h3>${h3}<span class="role">${span}</span></h3><p>${p}</p></div>`
+    )
+    .join('');
+  drama_data.innerHTML = drama_data_list;
+
+  const career_data_list = content.career_text
+    .map(
+      ({ span, li }) => `<li><span class="info_date">${span}</span>${li}</li>`
+    )
+    .join('');
+  career_data.innerHTML = career_data_list;
+
+  const award_data_list = content.award_text
+    .map(
+      ({ span, li }) => `<li><span class="info_date">${span}</span>${li}</li>`
+    )
+    .join('');
+  award_data.innerHTML = award_data_list;
+})();
+
+/************ 맨 위로 가는 버튼 구현 ************/
+const top_button = document.querySelector('.top_button');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 500) top_button.classList.add('active');
+  else top_button.classList.remove('active');
 });
 
-// Make stuff animate on load
-// https://www.amcharts.com/docs/v5/concepts/animations/
-series.appear();
-chart.appear(1000, 100);
-
-}); // end am5.ready()
+top_button.addEventListener('click', () => {
+  if (window.pageYOffset > 0) {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+});

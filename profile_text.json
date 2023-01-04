@@ -1,0 +1,366 @@
+{
+  "profile_text": [
+    {
+      "dt": "이름",
+      "dd": ": 이지은, IU"
+    },
+    {
+      "dt": "출생",
+      "dd": ": 1993.05.16"
+    },
+    {
+      "dt": "나이",
+      "dd": ": 30세, 만29세"
+    },
+    {
+      "dt": "소속사",
+      "dd": ": EDAM 엔터테인먼트"
+    },
+    {
+      "dt": "데뷔",
+      "dd": ": 2008년 미니 앨범 [Lost and Found]"
+    }
+  ],
+  "album_content": [
+    {
+      "img": "./assets/images/album_잔소리.png",
+      "strong": "잔소리",
+      "alt": "잔소리 앨범 표지",
+      "dt_one": "title",
+      "dd_one": ": 잔소리",
+      "dt_two": "아티스트",
+      "dd_two": ": 아이유(IU)",
+      "dt_three": "발매일",
+      "dd_three": ": 2010.06.03"
+    },
+    {
+      "img": "./assets/images/album_Real.png",
+      "strong": "Real",
+      "alt": "Real 앨범 표지",
+      "dt_one": "title",
+      "dd_one": ": 좋은날",
+      "dt_two": "아티스트",
+      "dd_two": ": 아이유(IU)",
+      "dt_three": "발매일",
+      "dd_three": ": 2010.12.09"
+    },
+    {
+      "img": "./assets/images/album_Last_Fantasy.png",
+      "strong": "Last Fantasy",
+      "alt": "Last Fantasy 앨범 표지",
+      "dt_one": "title",
+      "dd_one": ": 너랑 나",
+      "dt_two": "아티스트",
+      "dd_two": ": 아이유(IU)",
+      "dt_three": "발매일",
+      "dd_three": ": 2011.11.29"
+    },
+    {
+      "img": "./assets/images/album_Modern_Times.png",
+      "strong": "Modern Times",
+      "alt": "Modern Times 앨범 표지",
+      "dt_one": "title",
+      "dd_one": ": 분홍신",
+      "dt_two": "아티스트",
+      "dd_two": ": 아이유(IU)",
+      "dt_three": "발매일",
+      "dd_three": ": 2013.10.08"
+    },
+    {
+      "img": "./assets/images/album_Modern_Times_Epilogue.png",
+      "strong": "3집 Modern Times-Epilogue",
+      "alt": "3집 Modern Times-Epilogue 앨범 표지",
+      "dt_one": "title",
+      "dd_one": ": 금요일에 만나요",
+      "dt_two": "아티스트",
+      "dd_two": ": 아이유(IU)",
+      "dt_three": "발매일",
+      "dd_three": ": 2013.12.20"
+    },
+    {
+      "img": "./assets/images/album_밤편지.png",
+      "strong": "밤편지",
+      "alt": "밤편지 앨범 표지",
+      "dt_one": "title",
+      "dd_one": ": 밤편지",
+      "dt_two": "아티스트",
+      "dd_two": ": 아이유(IU)",
+      "dt_three": "발매일",
+      "dd_three": ": 2017.03.24"
+    },
+    {
+      "img": "./assets/images/album_palette.png",
+      "strong": "Palette",
+      "alt": "Palette 앨범 표지",
+      "dt_one": "title",
+      "dd_one": ": 팔레트, 이름에게",
+      "dt_two": "아티스트",
+      "dd_two": ": 아이유(IU)",
+      "dt_three": "발매일",
+      "dd_three": ": 2017.04.21"
+    },
+    {
+      "img": "./assets/images/album_Love_poem.png",
+      "strong": "Love poem",
+      "alt": "Love poem 앨범 표지",
+      "dt_one": "title",
+      "dd_one": ": Blueming, Love poem",
+      "dt_two": "아티스트",
+      "dd_two": ": 아이유(IU)",
+      "dt_three": "발매일",
+      "dd_three": ": 2019.11.18"
+    },
+    {
+      "img": "./assets/images/album_Lilac.png",
+      "strong": "IU 5th Album 'LILAC'",
+      "alt": "IU 5th Album 'LILAC' 앨범 표지",
+      "dt_one": "title",
+      "dd_one": ": 라일락, Coin",
+      "dt_two": "아티스트",
+      "dd_two": ": 아이유(IU)",
+      "dt_three": "발매일",
+      "dd_three": ": 2021.03.25"
+    },
+    {
+      "img": "./assets/images/album_strawberry_moon.png",
+      "strong": "strawberry moon",
+      "alt": "strawberry moon 앨범 표지",
+      "dt_one": "title",
+      "dd_one": ": strawberry moon",
+      "dt_two": "아티스트",
+      "dd_two": ": 아이유(IU)",
+      "dt_three": "발매일",
+      "dd_three": ": 2021.10.19"
+    }
+  ],
+  "album_content_dl": [
+    [
+      {
+        "dt": "AAA",
+        "dd": ": 111"
+      },
+      {
+        "dt": "BBB",
+        "dd": ": 222"
+      },
+      {
+        "dt": "CCC",
+        "dd": ": 333"
+      }
+    ],
+    [
+      {
+        "dt": "DDD",
+        "dd": "444"
+      },
+      {
+        "dt": "EEE",
+        "dd": ": 555"
+      },
+      {
+        "dt": "FFF",
+        "dd": ": 666"
+      }
+    ],
+    [
+      {
+        "dt": "GGG",
+        "dd": ": 777"
+      },
+      {
+        "dt": "HHHH",
+        "dd": ": 888"
+      },
+      {
+        "dt": "II",
+        "dd": ": 99"
+      }
+    ],
+    [
+      {
+        "dt": "GGG",
+        "dd": ": 777"
+      },
+      {
+        "dt": "HHHH",
+        "dd": ": 888"
+      },
+      {
+        "dt": "II",
+        "dd": ": 99"
+      }
+    ],
+    [
+      {
+        "dt": "GGG",
+        "dd": ": 777"
+      },
+      {
+        "dt": "HHHH",
+        "dd": ": 888"
+      },
+      {
+        "dt": "II",
+        "dd": ": 99"
+      }
+    ],
+    [
+      {
+        "dt": "GGG",
+        "dd": ": 777"
+      },
+      {
+        "dt": "HHHH",
+        "dd": ": 888"
+      },
+      {
+        "dt": "II",
+        "dd": ": 99"
+      }
+    ],
+    [
+      {
+        "dt": "GGG",
+        "dd": ": 777"
+      },
+      {
+        "dt": "HHHH",
+        "dd": ": 888"
+      },
+      {
+        "dt": "II",
+        "dd": ": 99"
+      }
+    ],
+    [
+      {
+        "dt": "GGG",
+        "dd": ": 777"
+      },
+      {
+        "dt": "HHHH",
+        "dd": ": 888"
+      },
+      {
+        "dt": "II",
+        "dd": ": 99"
+      }
+    ],
+    [
+      {
+        "dt": "GGG",
+        "dd": ": 777"
+      },
+      {
+        "dt": "HHHH",
+        "dd": ": 888"
+      },
+      {
+        "dt": "II",
+        "dd": ": 99"
+      }
+    ],
+    [
+      {
+        "dt": "GGG",
+        "dd": ": 777"
+      },
+      {
+        "dt": "HHHH",
+        "dd": ": 888"
+      },
+      {
+        "dt": "II",
+        "dd": ": 99"
+      }
+    ]
+  ],
+  "drama_text": [
+    {
+      "h3": "[ 드림하이 ]",
+      "span": "주연 김필숙 역",
+      "p": "연예예술고등학교를 배경으로 펼쳐지는 청춘들의 스타가 되기 위한 꿈과 사랑을 그린 드라마"
+    },
+    {
+      "h3": "[ 최고다 이순신 ]",
+      "span": "주연 이순신 역",
+      "p": "아버지의 죽음을 계기로 뜻하지 않은 운명의 소용돌이에 휩쓸리게 된 엄마와 막내딸의 행복 찾기와 그녀의 사랑이야기"
+    },
+    {
+      "h3": "[ 프로듀사 ]",
+      "span": "주연 신디 역",
+      "p": "예능국 안에서 펼쳐지는 이야기"
+    },
+    {
+      "h3": "[ 달의 연인 - 보보경심 려 ]",
+      "span": "주연 해수 역",
+      "p": "4황자 '왕소'와 21세기 여인 '고하진'의 영혼이 미끄러져 들어간 고려 소녀 '해수'가 천 년의 시공간을 초월해 만난다."
+    },
+    {
+      "h3": "[ 나의 아저씨 ]",
+      "span": "주연 이지안 역",
+      "p": "삶의 무게를 버티며 살아가는 아저씨 삼 형제와 거칠게 살아온 한 여성이 서로를 통해 삶을 치유하게 되는 이야기"
+    },
+    {
+      "h3": "[ 호텔 델루나 ]",
+      "span": "주연 장만월 역",
+      "p": "엘리트 호텔리어가 호텔 델루나의 지배인을 맡게 되면서 사장과 함께 델루나를 운영하며 생기는 특별한 이야기"
+    }
+  ],
+  "career_text": [
+    {
+      "span": "2013.02",
+      "li": "경찰청 명예순경"
+    },
+    {
+      "span": "2012.02",
+      "li": "경찰청 학교폭력 예방 홍보대사"
+    },
+    {
+      "span": "2011.05",
+      "li": "2012 여수세계박람회 홍보대사"
+    }
+  ],
+  "award_text": [
+    {
+      "span": "2022",
+      "li": "제 14회 멜론뮤직어워드 베스트 솔로 여자"
+    },
+    {
+      "span": "2022",
+      "li": "제 14회 멜론뮤직어워드 스테이지 오브 더 이어"
+    },
+    {
+      "span": "2022",
+      "li": "제 14회 멜론뮤직어워드 TOP 10"
+    },
+    {
+      "span": "2022",
+      "li": "제 43회 청룡영화상 청정원 인기스타상"
+    },
+    {
+      "span": "2022",
+      "li": "제 42회 한국영화평론가협회상 신인여우상 (브로커)"
+    },
+    {
+      "span": "2022",
+      "li": "제 31회 부일영화상 여자인기스타상 (브로커)"
+    },
+    {
+      "span": "2022",
+      "li": "제 27회 춘사국제영화제 신인여우상 (브로커)"
+    },
+    {
+      "span": "2022",
+      "li": "K 글로벌 하트 드림 어워즈 글로벌 최애돌 여자 솔로 인기상"
+    },
+    {
+      "span": "2022",
+      "li": "제 19회 한국대중음악상 최우수 팝 음반 부문"
+    },
+    {
+      "span": "2022",
+      "li": "제 11회 가온차트 뮤직 어워즈 올해의 음반제작상"
+    }
+  ]
+}
