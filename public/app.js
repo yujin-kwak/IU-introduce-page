@@ -150,7 +150,7 @@ const career_data = document.querySelector('#career_data > ul');
 const award_data = document.querySelector('#award_data > ul');
 
 (async () => {
-  const res = await fetch('profile_text.json');
+  const res = await fetch('data.json');
   const content = await res.json();
 
   const profile_data_list = content.profile_text
