@@ -81,38 +81,3 @@ function delete_db(id) {
 
   read_db();
 }
-
-// const guest_ul = document.querySelector(
-//   'main > .main_guest_book > .guest_book_box > .guest_book_list_box > ul'
-// );
-// const guest_input = document.querySelector(
-//   'main > .main_guest_book > .guest_book_box > form > input'
-// );
-// const guest_form = document.querySelector(
-//   'main > .main_guest_book > .guest_book_box > form'
-// );
-
-// let guest_list = JSON.parse(localStorage.getItem('guest')) || [];
-
-// function update_guest_list() {
-//   guest_ul.innerHTML = '';
-//   guest_list.forEach((data) => {
-//     const li = document.createElement('li');
-//     li.innerHTML = `
-//     <div class="guest_text">
-//       <p>${data}</p>
-//       <
-//     </div>`;
-//     guest_ul.appendChild(li);
-//   });
-// }
-
-// update_guest_list();
-
-// guest_form.addEventListener('submit', (event) => {
-//   event.preventDefault();
-//   guest_list.push(guest_input.value);
-//   guest_input.value = '';
-//   localStorage.setItem('guest', JSON.stringify(guest_list));
-//   update_guest_list();
-// });
