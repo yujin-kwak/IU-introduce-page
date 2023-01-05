@@ -1,6 +1,6 @@
 let db;
 function start_db() {
-  const dbReq = indexedDB.open('guest_book', 1);
+  const dbReq = indexedDB.open('guest_book');
 
   dbReq.addEventListener('success', function (event) {
     db = event.target.result; //event.target: dbReq
