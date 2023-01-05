@@ -195,10 +195,7 @@ header > .nav_box > h1 {
 header > .nav_box > nav > ul {
   display: flex;
   margin: 50px 72px 0 0;
-}
-
-header > .nav_box > nav > ul > li + li {
-  margin-left: 28px;
+  gap: 30px;
 }
 
 header > .nav_box > nav > ul > li {
@@ -214,7 +211,7 @@ header > .nav_box > nav > ul > li > a {
   line-height: 24px;
 }
 
-header > .nav_box > nav > ul > li > a {
+/* header > .nav_box > nav > ul > li > a {
   transition-property: font-size, font-weight;
   transition-duration: 0.3s;
 }
@@ -222,6 +219,20 @@ header > .nav_box > nav > ul > li > a {
 header > .nav_box > nav > ul > li > a:hover {
   font-size: 21px;
   font-weight: bold;
+} */
+
+header > .nav_box > nav > ul > li > a:hover {
+  animation: nav_hover 0.2s forwards;
+}
+
+@keyframes nav_hover {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 21px;
+    font-weight: bold;
+  }
 }
 
 header > #header_bottom_line {
@@ -386,7 +397,7 @@ main > .main_album > .album_list_info > .album_box > .album_image_box {
   filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.3));
 }
 
-main
+/* main
   > .main_album
   > .album_list_info
   > .album_box
@@ -418,6 +429,47 @@ main
   left: 300px;
 
   opacity: 1;
+} */
+
+main
+  > .main_album
+  > .album_list_info
+  > .album_box
+  > .album_image_box
+  > .album_image_hover {
+  position: absolute;
+  top: -100px;
+  left: -130px;
+
+  width: 70px;
+  height: 400px;
+
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.8)
+  );
+  transform: rotateZ(30deg);
+}
+
+main
+  > .main_album
+  > .album_list_info
+  > .album_box
+  > .album_image_box:hover
+  > .album_image_hover {
+  animation: album_hover 0.7s 0.1s;
+}
+
+@keyframes album_hover {
+  from {
+    left: -130px;
+    opacity: 0.5;
+  }
+  to {
+    left: 300px;
+    opacity: 1;
+  }
 }
 
 main > .main_album > .album_list_info > .album_box > .album_content {
