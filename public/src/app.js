@@ -1,76 +1,3 @@
-/************클릭 이미지 슬라이더 기능************/
-document.querySelector('.right_arrow').onclick = function () {
-  let current_slide = document.querySelector(
-    '.main_drama .drama_poster.active'
-  );
-  let next_slide = current_slide.nextElementSibling;
-  if (next_slide === null) {
-    next_slide = current_slide.parentElement.firstElementChild;
-  }
-  current_slide.animate(
-    {
-      opacity: [1, 0],
-    },
-    {
-      duration: 1500,
-      easing: 'ease',
-      iterations: 1,
-      fill: 'both',
-    }
-  );
-
-  current_slide.classList.remove('active');
-  next_slide.animate(
-    {
-      opacity: [0, 1],
-    },
-    {
-      duration: 1500,
-      easing: 'ease',
-      iterations: 1,
-      fill: 'both',
-    }
-  );
-
-  next_slide.classList.add('active');
-};
-
-document.querySelector('.left_arrow').onclick = function () {
-  let current_slide = document.querySelector(
-    '.main_drama .drama_poster.active'
-  );
-  let previous_slide = current_slide.previousElementSibling;
-  if (previous_slide === null) {
-    previous_slide = current_slide.parentElement.lastElementChild;
-  }
-  current_slide.animate(
-    {
-      opacity: [1, 0],
-    },
-    {
-      duration: 1500,
-      easing: 'ease',
-      iterations: 1,
-      fill: 'both',
-    }
-  );
-
-  current_slide.classList.remove('active');
-  previous_slide.animate(
-    {
-      opacity: [0, 1],
-    },
-    {
-      duration: 1500,
-      easing: 'ease',
-      iterations: 1,
-      fill: 'both',
-    }
-  );
-
-  previous_slide.classList.add('active');
-};
-
 /************ 반복 UI 처리 ************/
 const profile_data = document.querySelector('#profile_data');
 const album_data = document.querySelector('#album_list_info');
@@ -85,7 +12,10 @@ const award_data = document.querySelector('#award_data > ul');
   const profile_data_list = content.profile_text
     .map(
       ({ dt, dd }) =>
-        `<div class="info_group"><dt>${dt}</dt><dd>${dd}</dd></div>`
+        `<div class="info_group">
+          <dt>${dt}</dt>
+          <dd>${dd}</dd>
+        </div>`
     )
     .join('');
   profile_data.innerHTML = profile_data_list;
@@ -104,7 +34,34 @@ const award_data = document.querySelector('#award_data > ul');
         dt_three,
         dd_three,
       }) =>
-        `<section class="album_box"><section class="album_image_box"><div class="album_image"><img src="${img}" alt="${alt}"></div><div class="album_image_hover"></div></section><section class="album_content"><div class="album_explain"><strong>${strong}</strong><dl class="info"><div class="info_group"><dt>${dt_one}</dt><dd>${dd_one}</dd></div><div class="info_group"><dt>${dt_two}</dt><dd>${dd_two}</dd></div><div class="info_group"><dt>${dt_three}</dt><dd>${dd_three}</dd></div></dl></div></section></section>`
+        `<section class="album_box">
+          <section class="album_image_box">
+            <div class="album_image">
+              <img src="${img}" alt="${alt}">
+            </div>
+            <div class="album_image_hover">
+            </div>
+          </section>
+          <section class="album_content">
+            <div class="album_explain">
+              <strong>${strong}</strong>
+              <dl class="info">
+                <div class="info_group">
+                  <dt>${dt_one}</dt>
+                  <dd>${dd_one}</dd>
+                </div>
+                <div class="info_group">
+                  <dt>${dt_two}</dt>
+                  <dd>${dd_two}</dd>
+                </div>
+                <div class="info_group">
+                  <dt>${dt_three}</dt>
+                  <dd>${dd_three}</dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+        </section>`
     )
     .join('');
   album_data.innerHTML = album_data_list;
@@ -112,7 +69,10 @@ const award_data = document.querySelector('#award_data > ul');
   const drama_data_list = content.drama_text
     .map(
       ({ h3, span, p }) =>
-        `<div class="drama_explain"><h3>${h3}<span class="role">${span}</span></h3><p>${p}</p></div>`
+        `<div class="drama_explain">
+          <h3>${h3}<span class="role">${span}</span></h3>
+          <p>${p}</p>
+        </div>`
     )
     .join('');
   drama_data.innerHTML = drama_data_list;

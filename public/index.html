@@ -11,7 +11,9 @@
     <link rel="icon" href="./images/love.png">
     <script defer src="./src/app.js"></script>
     <script defer src="./src/chart.js"></script>
+    <script defer src="./src/slider.js"></script>
     <script defer src="./src/scroll.js"></script>
+    <script defer src="./src/guest_book.js"></script>
     <title>IU introduce page</title>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Imbue:opsz@10..100&family=Nanum+Gothic&display=swap");
@@ -31,6 +33,7 @@
                         <li><a href="#album_bottom_line">드라마</a></li>
                         <li><a href="#drama_bottom_line">경력사항</a></li>
                         <li><a href="#career_bottom_line">수상내역</a></li>
+                        <li><a href="#award_bottom_line">방명록</a></li>
                     </ul>
                 </nav>
             </div>
@@ -46,7 +49,7 @@
                         <img src="./images/IU_profile_image.png" alt="아이유 프로필 사진">
                     </section>
                     <section class="main_profile_text">
-                        <dl id="profile_data" , class="info"></dl>
+                        <dl id="profile_data" class="info"></dl>
                     </section>
                 </section>
                 <section class="main_profile_chart">
@@ -54,7 +57,7 @@
                     <hr>
                     <div><canvas id="UAENA_Chart" width="915px" , height="347px"></canvas></div>
                 </section>
-                <hr id="profile_bottom_line" , class="article_bottom_line">
+                <hr id="profile_bottom_line" class="article_bottom_line">
                 </hr>
             </article>
             <article class="main_album">
@@ -87,7 +90,7 @@
                         </section>
                     </section> -->
                 </section>
-                <hr id="album_bottom_line" , class="article_bottom_line">
+                <hr id="album_bottom_line" class="article_bottom_line">
             </article>
             <article class="main_drama">
                 <section class="main_sub_title">
@@ -103,29 +106,46 @@
                     <div class="drama_poster"></div>
                     <div class="drama_poster"></div>
                 </section>
-                <section id="drama_data" , class="main_drama_list">
+                <section id="drama_data" class="main_drama_list">
                 </section>
-                <hr id="drama_bottom_line" , class="article_bottom_line">
+                <hr id="drama_bottom_line" class="article_bottom_line">
             </article>
             <article class="main_career">
                 <section class="main_sub_title">
                     <h2>경력사항</h2>
                 </section>
                 <section class="main_career_box">
-                    <div id="career_data" , class="info_list">
+                    <div id="career_data" class="info_list">
                         <ul></ul>
                     </div>
                 </section>
-                <hr id="career_bottom_line" , class="article_bottom_line">
+                <hr id="career_bottom_line" class="article_bottom_line">
             </article>
             <article class="main_award">
                 <section class="main_sub_title">
                     <h2>수상내역</h2>
                 </section>
                 <section class="main_award_box">
-                    <div id="award_data" , class="info_list">
+                    <div id="award_data" class="info_list">
                         <ul></ul>
                     </div>
+                </section>
+                <hr id="award_bottom_line" class="article_bottom_line">
+            </article>
+            <article class="main_guest_book">
+                <section class="main_sub_title">
+                    <h2>방명록</h2>
+                </section>
+                <section class="guest_book_title">
+                    <h3>방명록을 남겨주세요!</h3>
+                </section>
+                <section class="guest_book_box">
+                    <div id="create_message">
+                        <input id="input_password" placeholder="비밀번호" />
+                        <input id="input_text" placeholder="내용을 입력하세요" />
+                        <input id="input_btn" type="button" value="입력" onclick="create_db()"/>
+                    </div>
+                    <div id="guest_book_list_box"></div>
                 </section>
             </article>
         </main>

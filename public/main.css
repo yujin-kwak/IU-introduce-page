@@ -211,7 +211,7 @@ header > .nav_box > nav > ul > li > a {
   line-height: 24px;
 }
 
-/* header > .nav_box > nav > ul > li > a {
+header > .nav_box > nav > ul > li > a {
   transition-property: font-size, font-weight;
   transition-duration: 0.3s;
 }
@@ -219,20 +219,6 @@ header > .nav_box > nav > ul > li > a {
 header > .nav_box > nav > ul > li > a:hover {
   font-size: 21px;
   font-weight: bold;
-} */
-
-header > .nav_box > nav > ul > li > a:hover {
-  animation: nav_hover 0.2s forwards;
-}
-
-@keyframes nav_hover {
-  from {
-    font-size: 20px;
-  }
-  to {
-    font-size: 21px;
-    font-weight: bold;
-  }
 }
 
 header > #header_bottom_line {
@@ -337,7 +323,7 @@ main > .main_profile > .main_profile_chart > h3 {
 
   color: #ff8b14;
 
-  font-family: 'Gowun Batang', serif;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 20px;
   line-height: 29px;
 }
@@ -397,40 +383,6 @@ main > .main_album > .album_list_info > .album_box > .album_image_box {
   filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.3));
 }
 
-/* main
-  > .main_album
-  > .album_list_info
-  > .album_box
-  > .album_image_box
-  > .album_image_hover {
-  position: absolute;
-  top: -100px;
-  left: -130px;
-
-  width: 70px;
-  height: 400px;
-
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(255, 255, 255, 0.8)
-  );
-  transform: rotateZ(30deg);
-  transition: 0.6s;
-  opacity: 0.5;
-}
-
-main
-  > .main_album
-  > .album_list_info
-  > .album_box
-  > .album_image_box:hover
-  > .album_image_hover {
-  left: 300px;
-
-  opacity: 1;
-} */
-
 main
   > .main_album
   > .album_list_info
@@ -489,7 +441,7 @@ main
   > .album_explain {
   margin: 20px 0 0 16px;
 
-  font-family: 'Gowun Batang', serif;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 20px;
   line-height: 29px;
 }
@@ -609,6 +561,7 @@ main > .main_drama > .main_drama_list > .drama_explain > h3 {
 
   color: #ff8b14;
 
+  font-family: 'Gowun Batang', serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 29px;
@@ -619,6 +572,7 @@ main > .main_drama > .main_drama_list > .drama_explain > h3 > span {
 
   color: #ff8b14;
 
+  font-family: 'Gowun Batang', serif;
   font-size: 17px;
   line-height: 26px;
 }
@@ -637,15 +591,19 @@ main > .main_career {
 }
 
 main > .main_career > .main_career_box > .info_list {
-  width: 345px;
+  width: 500px;
   height: 95px;
   margin: 32px 0 0 40px;
 }
 
 main .info_list {
   font-family: 'Gowun Batang', serif;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 29px;
+}
+
+main .info_list li {
+  margin-top: 5px;
 }
 
 main .info_list > ul > li > .info_date {
@@ -658,7 +616,7 @@ main .info_list > ul > li > .info_date {
 
 main > .main_award {
   width: 957px;
-  height: 387px;
+  height: 467px;
   padding: 0 34px 0 33px;
 }
 
@@ -670,12 +628,154 @@ main > .main_award > .main_award_box > .info_list > ul > li > .info_date {
   margin-right: 29px;
 }
 
+main > .main_guest_book {
+  position: relative;
+
+  width: 957px;
+  height: 777px;
+  padding: 0 34px 0 33px;
+}
+
+main > .main_guest_book > .guest_book_title > h3 {
+  margin: 35px 0 0 355px;
+
+  color: #ff8b14;
+
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+main > .main_guest_book > .guest_book_box {
+  margin-left: 18px;
+}
+
+main > .main_guest_book > .guest_book_box > #create_message {
+  width: 776px;
+  height: 26px;
+  margin: 49px 0 0 100px;
+}
+
+main > .main_guest_book > .guest_book_box > #create_message > #input_name {
+  width: 57px;
+  height: 26px;
+  border: 1px solid #ff8b14;
+  border-radius: 10px;
+
+  background-color: #fff;
+
+  text-align: center;
+}
+
+main > .main_guest_book > .guest_book_box > #create_message > #input_password {
+  width: 110px;
+  height: 26px;
+  border: 1px solid #ff8b14;
+  border-radius: 10px;
+
+  background-color: #fff;
+
+  text-align: center;
+}
+
+main > .main_guest_book > .guest_book_box > #create_message > #input_text {
+  width: 513px;
+  height: 26px;
+  border: 1px solid #ff8b14;
+  border-radius: 10px;
+
+  background-color: #fff;
+
+  text-align: center;
+}
+
+main > .main_guest_book > .guest_book_box > #create_message > #input_btn {
+  width: 57px;
+  height: 34px;
+  border: 1px solid #ff8b14;
+  border-radius: 5px;
+
+  background-color: rgba(255, 198, 139, 0.5);
+}
+
+main > .main_guest_book > .guest_book_box > #guest_book_list_box {
+  overflow: auto;
+  width: 776px;
+  height: 532px;
+  margin: 26px 0 0 68px;
+  border: 3px solid #ff8b14;
+  border-radius: 10px;
+
+  background-color: #f8f4ea;
+}
+
+main > .main_guest_book > .guest_book_box > #guest_book_list_box > .guest_text {
+  width: 705px;
+  height: 31px;
+  margin: 16px 0 0 34px;
+  border: 1px solid #ffc68b;
+  border-radius: 10px;
+
+  background-color: #fff;
+}
+
+main
+  > .main_guest_book
+  > .guest_book_box
+  > #guest_book_list_box
+  > .guest_text:nth-child(1) {
+  margin-top: 25px;
+}
+
+main > .main_guest_book > .guest_book_box > #guest_book_list_box > .guest_text {
+  position: relative;
+
+  display: flex;
+}
+
+main
+  > .main_guest_book
+  > .guest_book_box
+  > #guest_book_list_box
+  > .guest_text
+  > p {
+  padding: 5px 0 0 20px;
+
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+}
+
+main
+  > .main_guest_book
+  > .guest_book_box
+  > #guest_book_list_box
+  > .guest_text
+  > #delete_btn {
+  position: absolute;
+  right: 8px;
+
+  width: 50px;
+  height: 22px;
+  border: 3px solid #cd5c5c;
+  border-radius: 7px;
+  margin: 5px 0 0 0;
+
+  color: #fff;
+  background: #cd5c5c;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
 footer > p {
   margin: 47px 0 56px 327px;
 
   color: #ff8b14;
 
-  font-family: 'Gowun Batang', serif;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 20px;
   line-height: 29px;
 }
