@@ -650,21 +650,127 @@ main > .main_guest_book > .guest_book_box {
   margin-left: 18px;
 }
 
-main > .main_guest_book > .guest_book_box > #create_message {
+/* main > .main_guest_book > .guest_book_box > form {
   width: 776px;
   height: 26px;
-  margin: 49px 0 0 100px;
+  margin: 49px 0 0 75px;
 }
 
-main > .main_guest_book > .guest_book_box > #create_message > #input_name {
-  width: 57px;
+main > .main_guest_book > .guest_book_box > form > input {
+  width: 700px;
   height: 26px;
+
   border: 1px solid #ff8b14;
   border-radius: 10px;
 
   background-color: #fff;
 
   text-align: center;
+}
+
+main > .main_guest_book > .guest_book_box > form > button {
+  width: 57px;
+  height: 34px;
+  border: 1px solid #ff8b14;
+  border-radius: 5px;
+
+  background-color: rgba(255, 198, 139, 0.5);
+}
+
+main > .main_guest_book > .guest_book_box > .guest_book_list_box {
+  overflow: auto;
+  width: 776px;
+  height: 532px;
+  margin: 26px 0 0 68px;
+  border: 3px solid #ff8b14;
+  border-radius: 10px;
+
+  background-color: #f8f4ea;
+}
+
+main
+  > .main_guest_book
+  > .guest_book_box
+  > .guest_book_list_box
+  > ul
+  > li
+  > .guest_text {
+  width: 705px;
+  height: 31px;
+  margin: 16px 0 0 34px;
+  border: 1px solid #ffc68b;
+  border-radius: 10px;
+
+  background-color: #fff;
+}
+
+main
+  > .main_guest_book
+  > .guest_book_box
+  > .guest_book_list_box
+  > ul
+  > li
+  > .guest_text:nth-child(1) {
+  margin-top: 25px;
+}
+
+main
+  > .main_guest_book
+  > .guest_book_box
+  > .guest_book_list_box
+  > ul
+  > li
+  > .guest_text {
+  position: relative;
+
+  display: flex;
+}
+
+main
+  > .main_guest_book
+  > .guest_book_box
+  > .guest_book_list_box
+  > ul
+  > li
+  > .guest_text
+  > p {
+  padding: 5px 0 0 20px;
+
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+}
+
+main
+  > .main_guest_book
+  > .guest_book_box
+  > .guest_book_list_box
+  > ul
+  > li
+  > .guest_text
+  > #delete_btn {
+  position: absolute;
+  right: 8px;
+
+  width: 50px;
+  height: 22px;
+  border: 3px solid #cd5c5c;
+  border-radius: 7px;
+  margin: 5px 0 0 0;
+
+  color: #fff;
+  background: #cd5c5c;
+
+  font-size: 12px;
+
+  cursor: pointer;
+} */
+
+main > .main_guest_book > .guest_book_box > #create_message {
+  width: 776px;
+  height: 26px;
+  margin: 49px 0 0 100px;
 }
 
 main > .main_guest_book > .guest_book_box > #create_message > #input_password {
