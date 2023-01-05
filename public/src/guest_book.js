@@ -1,6 +1,6 @@
 let db;
-function start_db() {
-  const dbReq = indexedDB.open('guest_book');
+async function start_db() {
+  const dbReq = await indexedDB.open('guest_book', 1);
 
   dbReq.addEventListener('success', function (event) {
     db = event.target.result; //event.target: dbReq
@@ -12,7 +12,6 @@ function start_db() {
   });
   dbReq.addEventListener('upgradeneeded', function (event) {
     db = event.target.result;
-    read_db();
     let oldVersion = event.oldVersion;
     if (oldVersion < 1) {
       db.createObjectStore('topics', { keyPath: 'id', autoIncrement: true });
