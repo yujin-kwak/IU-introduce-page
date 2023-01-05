@@ -24,7 +24,8 @@ start_db();
 
 function read_db() {
   let guest_book_list = [];
-  const store = db.transaction(['topics'], 'readwrite').objectStore('topics');
+  const store = db.event.target.transaction(['topics'], 'readwrite');
+  existingVersionChangeTransaction.objectStore('topics');
 
   store.openCursor().onsuccess = function (event) {
     //openCursor로 cursor를 요청, 요청 성공 -> onsucess함수 실행
