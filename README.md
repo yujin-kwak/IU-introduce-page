@@ -1,6 +1,4 @@
 <p align="center">
-    <img src="https://capsule-render.vercel.app/api?type=cylinder&color=FFCC99&height=200&section=header&text=IU%20Introduce%20Page&fontSize=80&fontColor=FFFFFF&animation=fadeIn)/>
-
   ![header](https://capsule-render.vercel.app/api?type=cylinder&color=FFCC99&height=200&section=header&text=IU%20Introduce%20Page&fontSize=80&fontColor=FFFFFF&animation=fadeIn)   
 </p>
 
