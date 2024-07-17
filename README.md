@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://capsule-render.vercel.app/api?type=Rounded&color=FFCC99&height=200&section=header&text=아이유%20소개%20페이지&fontSize=90&fontColor=FFFFFF&animation=fadeIn)/>
+    <img src="https://capsule-render.vercel.app/api?type=cylinder&color=FFCC99&height=200&section=header&text=IU%20Introduce%20Page&fontSize=80&fontColor=FFFFFF&animation=fadeIn)/>
 
   ![header](https://capsule-render.vercel.app/api?type=cylinder&color=FFCC99&height=200&section=header&text=IU%20Introduce%20Page&fontSize=80&fontColor=FFFFFF&animation=fadeIn)   
 </p>
